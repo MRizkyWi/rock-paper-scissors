@@ -8,13 +8,29 @@
 
     <body>
         <div class="game">
-            <button id="rock" onclick="chooseWeapon(this.id)">rock</button>
-            <button id="paper" onclick="chooseWeapon(this.id)">paper</button>
-            <button id="scissors" onclick="chooseWeapon(this.id)">scissors</button>
-            <h3 id="messageboard"></h3>
-            <h1 id="scoreboard"></h1>
-            <button id="restart" onclick="restart()">restart</button>
+            <div class="weapons">
+                <img id="rock" class="weapon" src="images/rock.png" onclick="chooseWeapon(this.id)">
+                <img id="paper" class="weapon" src="images/paper.png" onclick="chooseWeapon(this.id)">
+                <img id="scissors" class="weapon" src="images/scissors.png" onclick="chooseWeapon(this.id)">
+            </div>
+            <div class="board">
+                <div class="score-board">
+                    <div class="score">
+                        <div class="player">You</div>
+                        <div id="human-score" class="number">0</div>
+                    </div>
+                    <div class="score">
+                        <div class="player">Com</div>
+                        <div id="comp-score" class="number">0</div>
+                    </div>
+                </div>
+                <div id="message-board"></div>
+            </div>
+            <button class="button" id="restart" onclick="restart()">restart</button>
             <script>updateScoreboard()</script>
+            <div class="footer">
+                <a href="https://www.vecteezy.com/free-vector/rock-hand">Rock Hand Vectors by Vecteezy</a>
+            </div>
         </div>
     </body>
 </html>

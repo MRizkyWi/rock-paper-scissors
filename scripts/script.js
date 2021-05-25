@@ -91,14 +91,14 @@ function whoWin(){
     switch (result) {
         case 0:
             humanScore++
-            updateMessageBoard(`You won this round! You choose ${human} while comp choose ${comp}`)
+            updateMessageBoard(`You won this round! You choose ${human} while Com choose ${comp}`)
             break;
         case 1:
             updateMessageBoard(`Tied! Both of you choose ${comp}`)
             break;
         case 2:
             compScore++
-            updateMessageBoard(`You lose this round! You choose ${human} while comp choose ${comp}`)
+            updateMessageBoard(`You lose this round! You choose ${human} while Com choose ${comp}`)
             break;
     }
 }
@@ -115,9 +115,11 @@ function switchNumToWeapon(num) {
 }
 
 function updateMessageBoard(text){
-    document.getElementById('messageboard').innerHTML = text
+    document.getElementById('message-board').innerHTML = text
 }
 
 function updateScoreboard(){
-    document.getElementById('scoreboard').innerHTML = `human ${humanScore} - ${compScore} computer`
+    document.getElementById('human-score').innerHTML = `${humanScore}`
+    document.getElementById('comp-score').innerHTML = `${compScore}`
 }
+

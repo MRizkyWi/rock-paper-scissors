@@ -8,7 +8,103 @@ body {
     color: #040404
 }
 
+body {
+    background: #202124;
+}
+
 .game{
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.weapons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weapon {
+    max-width: 200px;
+    margin: 20px;
+    border: 0px;
+}
+
+.weapon:hover{
+    opacity: 0.7;
+}
+
+#rock {
+    border-color: #fe2bf1;
+}
+
+#paper{
+    border-color: #00dfba;
+}
+
+#paper {
+    border-color: #0c7ceb;
+}
+
+.board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.score-board{
+   display: flex;
+   align-content: center;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    margin: 20px;
+}
+
+.number {
+    font-family: sans-serif;
+    font-size: 160px;
+}
+
+.player {
+    font-family: arial;
+    font-size: 48px;
+}
+
+#message-board {
+    font-family: helvetica;
+    font-size: 24px;
+    color:white
+}
+
+.button {
+    background-color: #125ab8;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: arial,
+    sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 24px 8px 24px;
+}
+
+.button:hover {
+    background-color: #024daf;
+}
+
+.footer {
+    width: 100%;
+    align-self: flex-end;
+    text-align: center;
 }
